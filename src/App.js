@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Card from "./components/Card";
+import Header from "./components/Header";
+import About from "./components/About";
 
-function App() {
+const App = () => {
+  const [about, setAbout] = useState(false);
+
+  const aboutHandler = () => {
+    if (!about) {
+      setAbout(true);
+    } else {
+      setAbout(false);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="body">
+      <header className="header">
+        <button
+          onClick={() => {
+            window.location.reload(false);
+          }}
+          className="button"
         >
-          Learn React
-        </a>
+          Main Page
+        </button>
+
+        <button onClick={aboutHandler} className="button">
+          About
+        </button>
       </header>
+      <Header />
+      {about && <About />}
+      <Card />
     </div>
   );
-}
+};
 
 export default App;

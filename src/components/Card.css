@@ -1,0 +1,95 @@
+.image {
+  align-self: center;
+  border-radius: 5%;
+  margin: 2%;
+  width: 200px;
+  height: 200px;
+}
+
+.card {
+  width: 600px;
+  height: 220px;
+  display: flex;
+  overflow: hidden;
+  background: #1f1f1f;
+  border-radius: 0.5rem;
+  margin: 0.75rem;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+
+/* .maincard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: red;
+} */
+
+.maincard {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1920px;
+}
+
+.txt {
+  font-family: "Hanalei Fill", cursive;
+  color: white;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hanalei Fill", cursive;
+  color: red;
+  font-size: 200%;
+}
+
+.bottom__nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom__navbutton {
+  background: #0d9109;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin: 10px;
+  border-radius: 5px;
+  width: 75px;
+  color: white;
+  height: 30px;
+}
+
+.bottom__navbutton:hover {
+  background-color: #12d90b;
+}
+
+.bottom__navtext {
+  color: white;
+}
